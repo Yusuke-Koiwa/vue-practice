@@ -8,9 +8,10 @@
   <body>
 
     <div id="app">
-      <like-component message="Like"></like-component>
-      <like-component message="Awesome"></like-component>
-      <like-component message="Great"></like-component>
+      <p>Total Likes: {{ total }}</p>
+      <like-component message="Like" @increment="incrementTotal"></like-component>
+      <like-component message="Awesome" @increment="incrementTotal"></like-component>
+      <like-component message="Great" @increment="incrementTotal"></like-component>
       <like-component></like-component>
     </div>
 
